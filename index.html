@@ -14,6 +14,8 @@
   <!-- Bootstrap link may delete later  -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--JQuery-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -30,15 +32,49 @@
         <li><a href="badges.html">Events</a></li>
         <li><a href="collapsible.html">Dining</a></li>
       </ul>
+      <div class="dropdown float-right" style="margin-right:40px;">
+        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" style="color:#FA8072;border:0px transparent none;box-shadow:none;">
+          Departing City
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="height:170px;overflow-y:scroll;">
+          <a class="dropdown-item" data-id="ATL-sky" href="#">Atlanta</a>
+          <a class="dropdown-item" data-id="LAX-sky" href="#">Los Angeles</a>
+          <a class="dropdown-item" data-id="DFW-sky" href="#">Dallas/Fort Worth</a>
+          <a class="dropdown-item" data-id="DEN-sky" href="#">Denver</a>
+          <a class="dropdown-item" data-id="SFO-sky" href="#">San Francisco</a>
+          <a class="dropdown-item" data-id="LAS-sky" href="#">Las Vegas</a>
+          <a class="dropdown-item" data-id="SEA-sky" href="#">Seattle</a>
+          <a class="dropdown-item" data-id="CLT-sky" href="#">Charlotte</a>
+          <a class="dropdown-item" data-id="EWR-sky" href="#">Newark/New Jersey</a>
+          <a class="dropdown-item" data-id="PHX-sky" href="#">Phoenix</a>
+          <a class="dropdown-item" data-id="MIA-sky" href="#">Miami</a>
+          <a class="dropdown-item" data-id="IAH-sky" href="#">Houston</a>
+          <a class="dropdown-item" data-id="BOS-sky" href="#">Boston</a>
+          <a class="dropdown-item" data-id="MSP-sky" href="#">Minneapolis/St.Paul</a>
+          <a class="dropdown-item" data-id="DTW-sky" href="#">Detroit</a>
+          <a class="dropdown-item" data-id="FLL-sky" href="#">Fort Lauderdale</a>
+          <a class="dropdown-item" data-id="PHL-sky" href="#">Philadelphia</a>
+          <a class="dropdown-item" data-id="LGA-sky" href="#">New York/LaGuardia</a>
+          <a class="dropdown-item" data-id="BWI-sky" href="#">Baltimore/D.C</a>
+          <a class="dropdown-item" data-id="SLC-sky" href="#">Salt Lake City</a>
+          <a class="dropdown-item" data-id="MDW-sky" href="#">Chicago/Midway</a>
+          <a class="dropdown-item" data-id="TPA-sky" href="#">Tampa</a>
+          <a class="dropdown-item" data-id="HNL-sky" href="#">Honolulu</a>
+          <a class="dropdown-item" data-id="PDX-sky" href="#">Portland</a>
+
+        </div>
+      </div>
     </div>
   </nav>
-  <!--card-->
+  <!--button class="dropdown-toggle"-->
+  <!-- image card -->
   <div class="container text-center">
     <div class="row">
       <div class="col s6 m7">
         <div class="card">
           <div class="card-header">
-            <span class="card-title activator grey-text text-darken-4">Dining<i
+            <span class="card-title activator grey-text text-darken-4 dining-cl">Dining<i
                 class="material-icons right">more_vert</i></span>
           </div>
           <div class="card-image waves-effect waves-block waves-light">
@@ -58,7 +94,49 @@
       <div class="col s6 m7">
         <div class="card">
           <div class="card-header">
-            <span class="card-title activator grey-text text-darken-4">Event<i
+            <span class="card-title activator grey-text text-darken-4 events-cl">Events<i
+                class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/office.jpg">
+          </div>
+          <div class="card-content">
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s6 m7">
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title activator grey-text text-darken-4 airports-cl">Airports<i
+                class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/office.jpg">
+          </div>
+          <div class="card-content">
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m7">
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title activator grey-text text-darken-4 parks-cl">Theme Parks<i
                 class="material-icons right">more_vert</i></span>
           </div>
           <div class="card-image waves-effect waves-block waves-light">
@@ -78,37 +156,20 @@
     </div>
   </div>
 
-  <!-- card reveal -->
-  <div class="row">
-  </div>
-
   <!-- bring all together here -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <!--JavaScript at end of body for optimized loading-->
+  <script src="assets/javascript/app.js"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <!--JavaScript at end of body for optimized loading-->
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
