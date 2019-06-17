@@ -20,4 +20,5 @@ button, .btn, .btn-light {
 
 .card, .card-reveal {
     background-color: #FA8072 !important;
+background-image: url(./assets/images/flbackground.jpg);
 }
