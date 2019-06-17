@@ -17,5 +17,14 @@ $(".dropdown-item").on("click", function() {
         var price = response.Quotes[0].MinPrice;
         console.log(price);
         $("#price").text(price);
+        $("#airlines").text("");
+
+            for (i = 0; i < response.Carriers.length; i++) {
+                var a = $("<div>");
+                
+                $("#airlines").append(a);
+                a.append(response.Carriers[i].Name);
+
+            };
     });
 }); // end of on.click
