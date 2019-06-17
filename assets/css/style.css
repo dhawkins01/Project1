@@ -1,4 +1,24 @@
 body {
-background-image: url(./assets/images/flbackground.jpg);
+    background: url(../images/bg-2.jpg);
+}
 
+a:hover {
+    color: lightseagreen;
+    transition: 1s;
+}
+
+button, .btn, .btn-light {
+    color:#FA8072;
+    border:0px transparent none;
+    box-shadow:none;
+}
+
+.card, .card-header, .card-title, .card-reveal, .card-action, .card-content {
+    background: #FA8072;
+    color: #ffffff;
+}
+
+.card, .card-reveal {
+    background-color: #FA8072 !important;
+background-image: url(./assets/images/flbackground.jpg);
 }
