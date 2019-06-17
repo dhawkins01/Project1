@@ -5,20 +5,45 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>Place Search Pagination</title>
-    <link rel = "stylesheet" href="assets/css/maps.css">
+    <link rel="stylesheet" href="assets/css/maps.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-    <div id="map"></div>
-    <div id="right-panel">
-        <h2>Results</h2>
-        <ul id="places"></ul>
-        <button id="more">More results</button>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Orange Swan Planning</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="sass.html">Airports</a></li>
+                <li><a href="maps.html">Events</a></li>
+                <li><a href="collapsible.html">Dining</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row" id = "map-location">
+            <div style="width:600px; height: 400px;">
+                <div id="map"></div>
+                <div id="right-panel">
+                    <h2>Results</h2>
+                    <ul id="places"></ul>
+                    <button id="more">More results</button>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+
+
+    <script src="assets/javascript/maps.js"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDROhWTcQ4f28HpTDcsXXIwKpC6nJLmOyE&libraries=places&callback=initMap"
         async defer></script>
-        <script src = "assets/javascript/maps.js"></script>
 
 </body>
 

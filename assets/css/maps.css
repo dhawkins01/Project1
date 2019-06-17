@@ -2,15 +2,19 @@
 /* Always set the map height explicitly to define the size of the div
 * element that contains the map. */
 #map {
+    width: 100%;
     height: 100%;
 }
 
 /* Optional: Makes the sample page fill the window. */
-html,
+/* html,
 body {
     height: 100%;
     margin: 0;
     padding: 0;
+} */
+#map-location{
+    margin: 15px;
 }
 
 #right-panel {
@@ -36,8 +40,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     right: 5px;
-    top: 60%;
-    margin-top: -195px;
+    top: 18%;
+    /* margin-top: 195px; */
     height: 330px;
     width: 200px;
     padding: 5px;
