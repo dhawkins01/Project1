@@ -12,7 +12,8 @@
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <!-- Bootstrap link may delete later  -->
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -21,41 +22,6 @@
 </head>
 
 <body>
-
-    <header>
-        <h1>Orange Swan Planning</h1>
-      </header>
-    
-      <div class="container">
-        <nav>
-                <div class="nav-wrapper">
-                  <a href="#" class="brand-logo center">Orange Swan Planning</a>
-                  <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><a href="sass.html">Airports</a></li>
-                    <li><a href="badges.html">Events</a></li>
-                    <li><a href="collapsible.html">Dining</a></li>
-                  </ul>
-                </div>
-              </nav>
-
-              <!-- <div class="parallax-container"> -->
-                <!-- <div class="parallax"><img src="./assets/images/orlando4_first.jpg"></div> -->
-              <!-- </div> -->
-
-              <img src="assets/images/orlando4_first.jpg">
-            
-                      
-    <header>
-        <h1>Orange Swan Planning</h1>
-    </header>
-    <div class="container">
-        <section id="travel">
-          <h2>Airport Information</h2>
-          <p>Short description of what we do at Orange Swan Planning</p>
-        </section>
-    
-      </div>
-
   <nav>
     <div class="nav-wrapper">
       <a href="#" class="brand-logo center">Orange Swan Planning</a>
@@ -68,67 +34,60 @@
   </nav>
 
   <!-- image card -->
-  <div class="row">
-    <div class="col s12 m7">
-      <div class="card">
-        <div class="card-image">
-          <img src="images/sample-1.jpg">
-          <span class="card-title">Dining</span>
-        </div>
-        <div class="card-content">
-          <p>Dining Information for your trip goes here</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col s6 m7">
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title activator grey-text text-darken-4">Dining<i
+                class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/office.jpg">
+          </div>
+          <div class="card-content">
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- tab card -->
-  <div class="row">
-    <div class="card">
-      <div class="card-content">
-        <p>Event information for your Orlando trip goes here</p>
-      </div>
-      <div class="card-tabs">
-        <ul class="tabs tabs-fixed-width">
-          <li class="tab"><a href="#test4">Test 1</a></li>
-          <li class="tab"><a class="active" href="#test5">Test 2</a></li>
-          <li class="tab"><a href="#test6">Test 3</a></li>
-        </ul>
-      </div>
-      <div class="card-content grey lighten-4">
-        <div id="test4">Test 1</div>
-        <div id="test5">Test 2</div>
-        <div id="test6">Test 3</div>
+      <div class="col s6 m7">
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title activator grey-text text-darken-4">Event<i
+                class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/office.jpg">
+          </div>
+          <div class="card-content">
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- card reveal -->
   <div class="row">
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="images/office.jpg">
-      </div>
-      <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">Event<i
-            class="material-icons right">more_vert</i></span>
-        <p><a href="#">This is a link</a></p>
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-      </div>
-    </div>
   </div>
 
   <!-- bring all together here -->
 
 
 
-  
+
 
 
 
@@ -148,10 +107,9 @@
   <!--JavaScript at end of body for optimized loading-->
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-      <!--JavaScript at end of body for optimized loading-->
-      <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-      $(.parallax).parallax();
+  <!--JavaScript at end of body for optimized loading-->
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>
