@@ -2,6 +2,12 @@ body {
     background: url(../images/bg-2.jpg);
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 a:hover {
     color: lightseagreen;
     transition: 1s;
@@ -22,18 +28,7 @@ button, .btn, .btn-light {
 
 .card  {
     background-color: #FA8072 !important;
-
 }
-
 #map {
     height: 100%;
-}
-
-nav {
-    font-family: 'Handlee', cursive;
-
-    
-}
-nav h1 {
-    margin: 7.5px 0;
 }
