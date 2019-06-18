@@ -22,3 +22,7 @@ button, .btn, .btn-light {
     background-color: #FA8072 !important;
 
 }
+
+#map {
+    height: 100%;
+}
