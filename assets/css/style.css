@@ -20,7 +20,7 @@ button, .btn, .btn-light {
 }
 
 .card, .card-header, .card-title,  .card-action, .card-content {
-    background: #FA8072;
+    background: #ee6373;
     color: white;
     font-family: 'Handlee', cursive;
 
@@ -71,4 +71,8 @@ button, .btn, .btn-light {
  #more {
     width: 100%;
     margin: 5px 0 0 0;
+ }
+
+ nav h1 {
+    font-family: 'Handlee', cursive;
  }
