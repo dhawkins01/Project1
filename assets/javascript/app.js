@@ -1,4 +1,4 @@
-$(".dropdown-item").on("click", function() {
+$(".dropdown-item").on("click", function () {
 
     var originCity = $(this).attr("data-id");
     console.log(originCity);
@@ -19,24 +19,13 @@ $(".dropdown-item").on("click", function() {
         $("#price").text(price);
         $("#airlines").text("");
 
-            for (i = 0; i < response.Carriers.length; i++) {
-                var a = $("<div>");
-                
-                $("#airlines").append(a);
-                a.append(response.Carriers[i].Name);
+        for (i = 0; i < response.Carriers.length; i++) {
+            var a = $("<div>");
 
-            };
+            $("#airlines").append(a);
+            a.append(response.Carriers[i].Name);
+
+        };
     });
 });
-var map;
 
-function initMap() {
-    // Create the map.
-    var orlando = { lat: 28.47413, lng: -81.46969 };
-    map = new google.maps.Map(document.getElementById('map'), {
-        center: orlando,
-        zoom: 17
-    });
-
-
-}

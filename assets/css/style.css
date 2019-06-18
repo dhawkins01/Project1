@@ -1,7 +1,13 @@
-/* body {
+body {
     background: url(../images/bg-2.jpg);
-} */
+}
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 a:hover {
     color: lightseagreen;
     transition: 1s;
@@ -20,9 +26,48 @@ button, .btn, .btn-light {
 
 .card,  {
     background-color: #FA8072 !important;
-background-image: url(./assets/images/flbackground.jpg);
+    background-image: url(./assets/images/flbackground.jpg);
 }
-
 #map {
     height: 100%;
+}
+
+#right-panel {
+    font-family: 'Roboto', 'sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+#right-panel select,
+#right-panel input {
+    font-size: 15px;
+}
+
+#right-panel select {
+    width: 100%;
+}
+
+#right-panel i {
+    font-size: 12px;
+}
+
+#right-panel {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    position: relative;
+    top: 0%;
+    margin-top: 5px;
+    padding: 5px;
+    z-index: 5;
+    border: 1px solid #999;
+    background: rgb(255, 166, 0);
+}
+
+h2 {
+    font-size: 22px;
+    margin: 0 0 5px 0;
+}
+#more {
+    width: 100%;
+    margin: 5px 0 0 0;
 }
