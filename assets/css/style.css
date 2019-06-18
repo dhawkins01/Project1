@@ -15,7 +15,9 @@ button, .btn, .btn-light {
 
 .card, .card-header, .card-title,  .card-action, .card-content {
     background: #FA8072;
-    color: black;
+    color: white;
+    font-family: 'Handlee', cursive;
+
 }
 
 .card  {
@@ -28,7 +30,8 @@ button, .btn, .btn-light {
 }
 
 nav {
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Handlee', cursive;
+
     
 }
 nav h1 {
