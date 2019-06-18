@@ -15,10 +15,10 @@ button, .btn, .btn-light {
 
 .card, .card-header, .card-title,  .card-action, .card-content {
     background: #FA8072;
-    color: #ffffff;
+    color: black;
 }
 
-.card,  {
+.card  {
     background-color: #FA8072 !important;
-background-image: url(./assets/images/flbackground.jpg);
+
 }
