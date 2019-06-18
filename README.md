@@ -36,6 +36,9 @@ Thank you to the UCF Coding Boot Camp ~~and donut Fridays~~ for the knowledge, p
 
 #### **Visual Process**
 
+![readme1](/assets/images/readme1.jpg)
+
+![readme2](/assets/images/readme2.png)
 
 
 
