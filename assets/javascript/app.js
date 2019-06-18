@@ -27,4 +27,16 @@ $(".dropdown-item").on("click", function() {
 
             };
     });
-}); // end of on.click
+});
+var map;
+
+function initMap() {
+    // Create the map.
+    var orlando = { lat: 28.47413, lng: -81.46969 };
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: orlando,
+        zoom: 17
+    });
+
+
+}
