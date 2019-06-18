@@ -13,12 +13,12 @@ button, .btn, .btn-light {
     box-shadow:none;
 }
 
-.card, .card-header, .card-title, .card-reveal, .card-action, .card-content {
+.card, .card-header, .card-title,  .card-action, .card-content {
     background: #FA8072;
     color: #ffffff;
 }
 
-.card, .card-reveal {
+.card,  {
     background-color: #FA8072 !important;
 background-image: url(./assets/images/flbackground.jpg);
 }
