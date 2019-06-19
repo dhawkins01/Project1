@@ -41,6 +41,7 @@
 </head>
 
 <body>
+  <!-- beggining of navigation -->
   <nav>
     <div class="nav-wrapper">
       <a href="#" class="brand-logo center">
@@ -51,6 +52,7 @@
         <li><a href="maps.html">Events</a></li>
         <li><a href="collapsible.html">Dining</a></li>
       </ul> -->
+      <!-- Dropdown -->
       <div class="dropdown float-right" style="margin-right:40px;">
         <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
@@ -83,17 +85,16 @@
           <a class="dropdown-item" data-id="PDX-sky" href="#">Portland</a>
 
         </div>
-
-      </div>
-
     </div>
 
   </nav>
-  <!--button class="dropdown-toggle"-->
-  <!-- image card -->
+  <!-- End of Navigation -->
+ <!-- Main Page start -->
   <div class="container text-center">
+    
     <div class="row">
       <div class="col s6 m7">
+        <!-- Dining Card -->
         <div class="card">
           <div class="card-header">
             <span class="card-title activator dining-cl">Dining<i class="material-icons right">more_vert</i></span>
@@ -103,7 +104,7 @@
           </div>
 
           <div class="card-reveal">
-            <span class="card-title">Card Title<i class="material-icons right">close</i></span>
+            <span class="card-title">Dining<i class="material-icons right">close</i></span>
 
             <div style="width:497.5px; height: 345px;" id="map"></div>
             <div id="right-panel">
@@ -116,6 +117,7 @@
         </div>
       </div>
       <div class="col s6 m7">
+        <!-- Lodging Card -->
         <div class="card">
           <div class="card-header">
             <span class="card-title activator events-cl">Lodging<i class="material-icons right">more_vert</i></span>
@@ -125,19 +127,22 @@
           </div>
 
           <div class="card-reveal">
-            <span class="card-title">Card Title<i class="material-icons right">close</i></span>
+
+            <span class="card-title">Lodging<i class="material-icons right">close</i></span>
             <div style="width:497.5px; height: 346.5px;" id="lodgingMap"></div>
             <div id="right-panel">
               <h2>Results</h2>
               <ul id="lodgingplaces"></ul>
               <button id="lodgingmore">More results</button>
             </div>
+
           </div>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col s6 m7">
+        <!-- Airport Card -->
         <div class="card">
           <div class="card-header">
             <span class="card-title activator airports-cl">Airports<i class="material-icons right">more_vert</i></span>
@@ -145,21 +150,26 @@
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="assets/images/airportUseFirst.jpg">
           </div>
-          <!-- Airport card -->
 
-          <div class="card-reveal">
-            <span class="card-title">Minimum Price: <span id="price"></span>
-              <i class="material-icons right">close</i></span>
+          <!-- Airport card -->
+          
+          <div class="card-reveal text-left">
+            <div class="card-title">Airline Information<i class="material-icons right">close</i></span></div>
+              
             <!-- Airport content area -->
+            <h4>Minimum Price: $<span id="price"></span></h4>
             <div id="airlines">
               <!-- Airlines will populate here -->
             </div>
+            <hr>
+            <h3>For more details, search below:</h3>
             <div data-skyscanner-widget="SearchWidget" data-destination-name="'Orlando'"></div>
             <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
           </div>
         </div>
       </div>
       <div class="col s6 m7">
+        <!-- Theme Parks Card -->
         <div class="card">
           <div class="card-header">
             <span class="card-title activator parks-cl">Theme Parks<i class="material-icons right">more_vert</i></span>
@@ -169,7 +179,8 @@
           </div>
 
           <div class="card-reveal">
-            <span class="card-title">Card Title<i class="material-icons right">close</i></span>
+
+            <span class="card-title">Theme Parks<i class="material-icons right">close</i></span>
             <div style="width:497.5px; height: 345px;" id="parkMap"></div>
             <div id="right-panel">
               <h2>Results</h2>
@@ -191,7 +202,7 @@
           <p class="grey-text text-lighten-4">Thank you for using Orange Swan Planning for your travel, dining and event
             needs. Stay tuned for updates on the website.</p>
         </div>
-        <div class="col l4 offset-l2 s12">
+        <!-- <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Links to Contributer Bios Coming Soon</h5>
           <ul>
             <li><a class="grey-text text-lighten-3" href="#!">Alex Oh</a></li>
@@ -199,7 +210,7 @@
             <li><a class="grey-text text-lighten-3" href="#!">David Hawkins</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Marisa Quijano</a></li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="footer-copyright">
