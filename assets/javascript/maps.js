@@ -1,51 +1,61 @@
-var map;
+var map, lodgingMap;
 
 function initMap() {
     // Create the map.
     var orlando = { lat: 28.47413, lng: -81.46969 };
     map = new google.maps.Map(document.getElementById('map'), {
         center: orlando,
-        zoom: 8
+        zoom: 14
+    });
+    lodgingMap = new google.maps.Map(document.getElementById('lodgingMap'), {
+        center: orlando,
+        zoom: 14
     });
     var infowindow = new google.maps.InfoWindow();
 
 
     // Create the places service.
     var service = new google.maps.places.PlacesService(map);
+    var service2 = new google.maps.places.PlacesService(lodgingMap);
     var getNextPage = null;
+    var getNextPage2 = null;
     var moreButton = document.getElementById('more');
+    var moreButton2 = document.getElementById('lodgingmore');
+
     moreButton.onclick = function () {
         moreButton.disabled = true;
         if (getNextPage) getNextPage();
     };
 
+    moreButton2.onclick = function(){
+        moreButton2.disabled = true;
+        if (getNextPage2) getNextPage();
+    }
     // Perform a nearby search.
     service.nearbySearch(
         { location: orlando, radius: 20000, type: ['restaurant'] },
         function (results, status, pagination) {
             if (status !== 'OK') return;
-
             createMarkers(results);
             moreButton.disabled = !pagination.hasNextPage;
             getNextPage = pagination.hasNextPage && function () {
                 pagination.nextPage();
             };
         });
-
+    
+        service2.nearbySearch(
+            { location: orlando, radius: 20000, type: ['lodging'] },
+            function (results, status, pagination) {
+                if (status !== 'OK') return;
+                createMarkers(results);
+                moreButton2.disabled = !pagination.hasNextPage;
+                getNextPage2 = pagination.hasNextPage && function () {
+                    pagination.nextPage();
+                };
+            });    
     var request = {
         fields: ['name', 'formatted_address', 'photos', 'place_id', 'geometry']
     };
-    // service.getDetails(request, function (place, status) {
-    //     google.maps.event.addListener(marker, 'click', function () {
-    //         infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
-    //             'Place ID: ' + place.place_id + '<br>' +
-    //             place.formatted_address + '</div>' +
-    //             '<img src=' + place.photos[0].getUrl() + ' height="100" width="100">'
-    //         );
-    //         infowindow.open(map, this);
-    //     });
-    // })
-
 }
 
 function createMarkers(places) {
@@ -76,3 +86,4 @@ function createMarkers(places) {
     }
     map.fitBounds(bounds);
 }
+
