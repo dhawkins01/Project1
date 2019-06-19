@@ -31,16 +31,18 @@ To begin Alex Oh and David Hawkins researched two API's that would be used for o
 
 #### **Acknowledgements**
 
-Thank you to the UCF Coding Boot Camp ~~and donut Fridays~~ for the knowledge, passion and determination for helping us complete our first project! :smiley:
+Thank you to the UCF Coding Boot Camp ~~and donuts~~ for the knowledge, passion and determination to help us complete our first project! :smiley:
 
 
 #### **Visual Process**
+
+![readme3](/assets/images/readme3.jpg)
 
 ![readme1](/assets/images/readme1.jpg)
 
 ![readme2](/assets/images/readme2.png)
 
-
+![readme4](/assets/images/readme4.png)
 
 
 
