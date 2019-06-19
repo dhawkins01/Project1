@@ -36,13 +36,9 @@ Thank you to the UCF Coding Boot Camp ~~and donuts~~ for the knowledge, passion 
 
 #### **Visual Process**
 
-![readme3](/assets/images/readme3.jpg)
+![readme5](/assets/images/readme5.jpg)
 
-![readme1](/assets/images/readme1.jpg)
 
-![readme2](/assets/images/readme2.png)
-
-![readme4](/assets/images/readme4.png)
 
 
 
