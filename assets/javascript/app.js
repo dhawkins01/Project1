@@ -1,3 +1,36 @@
+
+
+
+// function to show the temperature on the footer
+
+function initializeWeather() {
+    $.ajax({
+        url: "http://api.openweathermap.org/data/2.5/weather?zip=32812,us&APPID=61f56f48135eb5c36c6c42128d4c142f",
+        method: "GET",
+
+    }).then(function (response) {
+        console.log(response);
+        var kelvin = response.main.temp;
+        console.log(kelvin);
+        var f = (kelvin - 273.15) * (9 / 5) + 32;
+        console.log(f);
+        var far = Math.floor(f);
+        console.log(far);
+        $("#temp").text(far);
+    });
+    // call the initializeWeather function
+    
+
+
+}; //end of initialize weather
+initializeWeather();
+
+
+
+
+
+
+// When a city is selected from the dropdown, display the skyscanner api info on the airlines card
 $(".dropdown-item").on("click", function () {
 
     var originCity = $(this).attr("data-id");
