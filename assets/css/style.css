@@ -80,3 +80,7 @@ button, .btn, .btn-light {
  .card-reveal {
      color: black;
  }
+
+ .page-footer {
+    font-family: 'Handlee', cursive;
+ }
