@@ -23,6 +23,8 @@ function initializeWeather() {
 
 
 }; //end of initialize weather
+
+// initialize the function that pulls the temp from the openweather API
 initializeWeather();
 
 
