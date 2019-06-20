@@ -17,6 +17,7 @@ To begin Alex Oh and David Hawkins researched two API's that would be used for o
 
 * Skyskanner API
 * Google Places API
+* OpenWeatherMap API
 * Materialize
 * Bootstrap
 
