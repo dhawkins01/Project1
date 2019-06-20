@@ -5,7 +5,7 @@
 
 function initializeWeather() {
     $.ajax({
-        url: "http://api.openweathermap.org/data/2.5/weather?zip=32812,us&APPID=61f56f48135eb5c36c6c42128d4c142f",
+        url: "https://api.openweathermap.org/data/2.5/weather?zip=32812,us&APPID=61f56f48135eb5c36c6c42128d4c142f",
         method: "GET",
 
     }).then(function (response) {
